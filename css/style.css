@@ -1,0 +1,102 @@
+/*background*/
+.div-a{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.backgraund-photo{
+	width: 100%;
+	height: 100%;
+	
+}
+html,body {
+	width: 100%;
+	height: 100%;
+}
+.image1{
+    position: absolute;
+    z-index: 10;
+    animation: mymove 5s infinite;
+}
+@keyframes mymove {
+  0%   {right: 0px;}
+  25%  {right: 200px;}
+  75%  {right: 250px}
+  100% {right: 200px;}	
+}
+.sun{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	z-index: 11;
+	animation: sun 5s infinite;
+	top: 30px;
+	left: 200px;
+}
+@keyframes sun {
+    0% {transform:rotate(0deg);}
+	25% {transform:rotate(100deg);}
+	50% {transform:rotate(200deg);}
+	70% {transform:rotate(300deg);}
+	80% {transform:rotate(400deg);}
+	100% {transform:rotate(500deg);}
+
+}
+.cloud1 { 
+	height: 300px;
+	position: absolute;
+	left:0;
+	z-index: 12;
+	animation: cloud1 20s linear infinite alternate;
+ }
+
+ @keyframes cloud1 {
+ 	0% {transform: translateX(0);
+ 	}
+ 	100% {transform: translateX(500px);
+ 	}
+ }
+ .cloud2{
+ 	position: absolute;
+ 	width: 500px;
+ 	right: 20px;
+ 	animation: cloud2 20s infinite linear alternate;
+ }
+ @keyframes cloud2{
+ 	0% { transform: translateZ(-10px); 
+ 	}
+ 	100% {transform: translateX(-600px);
+ 	}
+ }
+ .image2{
+ 	width: 300px;
+ 	height: 400px;
+ 	position: absolute;
+ 	top: 200px;
+ 	left: 100px;
+ 	animation: image2 5s infinite;
+ }
+ @keyframes image2{
+ 	0%{ transform: translatey(100px); }
+ 	100%{ transform: translatey(200px) rotate(35deg); }
+ }
+.flower{
+	position: absolute;
+	z-index: 5;
+	right: 0;
+	bottom: 0;
+	width: 600px;
+	height: 100px;
+}
+.steam{
+	height: 150px;
+	width: 150px;
+	position: absolute;
+	left: 800px;
+	top: 440px;
+	animation: steam 4s linear infinite;
+}
+@keyframes steam {
+	0% {transform:translatey(0px);}
+	100%{transform: translatey(-40px);}
+}
