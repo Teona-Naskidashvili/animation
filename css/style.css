@@ -80,23 +80,3 @@ html,body {
  	0%{ transform: translatey(100px); }
  	100%{ transform: translatey(200px) rotate(35deg); }
  }
-.flower{
-	position: absolute;
-	z-index: 5;
-	right: 0;
-	bottom: 0;
-	width: 600px;
-	height: 100px;
-}
-.steam{
-	height: 150px;
-	width: 150px;
-	position: absolute;
-	left: 800px;
-	top: 440px;
-	animation: steam 4s linear infinite;
-}
-@keyframes steam {
-	0% {transform:translatey(0px);}
-	100%{transform: translatey(-40px);}
-}
